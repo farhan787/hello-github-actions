@@ -1,0 +1,18 @@
+# We're going to have 5 things for a GitHub workflow to work
+# 1. Events
+# 2. Jobs
+# 3. Runner
+# 4. Steps
+# 5. Action
+
+name: First workflow
+
+on: push
+
+jobs:
+  build:
+    run-ons: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Running a sample github action
+      - run: echo "this workflow ran successfully for this particular action"
